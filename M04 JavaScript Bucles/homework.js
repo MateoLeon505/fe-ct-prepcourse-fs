@@ -94,16 +94,12 @@ function colors(color) {
    {
    case "blue":
       return "This is blue";
-      break;
    case "red":
       return "This is red";
-      break;
    case "green":
       return "This is green";
-      break;
    case "orange":
       return "This is orange";
-      break;
    default:
       return "Color not found";
    }
@@ -215,21 +211,18 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   for (var i=2; i<num; i++)
+   if (num<2)
    {
-      if (num<=1)
-      {
-         return false; 
-      }
-      else if ( num % i == 0)
+      return false; 
+   }
+   for (let i=2 ; i < num ; i++)
+   {
+      if ( num % i === 0 )
       {
          return false;
       }
-      else 
-      {
-         return true;
-      }
-   }
+   } 
+   return true;
 }
 
 function esVerdadero(valor) {
