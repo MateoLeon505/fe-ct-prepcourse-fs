@@ -110,25 +110,33 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
-   var Producto = 1 ;
-
-      if ( arguments < 0 || arguments > 0 || arguments == 0 )
+   arguments;
+   var productod= 1;
+   if ( arguments.length === 0 )
+   {
+      return 0 ;
+   }
+   else
+   {
+      for ( i = 0 ; i< arguments.length ; i++)
       {
-         for ( i = 0 ; i < arguments.length ; i++)
-         {
-            Producto = Producto * arguments[i] ;
-         }
-         return Producto;
+         productod = productod * arguments[i] ;
       }
-      else
-      {
-         return 0;
-      }
+      return productod;
+   }
 }
 
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
+   var j = 0;
+   for ( i = 0 ; i < array.length ; i++ )
+   {
+      if( array[i] > 18 )
+      {
+         return j++;
+      }
+   }
 }
 
 function diaDeLaSemana(numeroDeDia) {
