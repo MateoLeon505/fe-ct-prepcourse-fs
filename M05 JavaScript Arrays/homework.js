@@ -134,9 +134,10 @@ function cuentoElementos(array) {
    {
       if( array[i] > 18 )
       {
-         return j++;
+         j++;
       }
    }
+   return j;
 }
 
 function diaDeLaSemana(numeroDeDia) {
@@ -144,6 +145,14 @@ function diaDeLaSemana(numeroDeDia) {
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
+      if (numeroDeDia === 1 || numeroDeDia === 7)
+      {
+         return "Es fin de semana";
+      }
+      else
+      {
+         return "Es dia laboral";
+      }
 }
 
 function empiezaConNueve(num) {
